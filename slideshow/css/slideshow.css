@@ -1,0 +1,72 @@
+/*
+ *	Tag Definitions
+ */
+
+
+#billboard-wrapper {
+	height: 320px;
+	width: <?=$ssWidth;?>px;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+#billboard {
+	background: black;
+	position: relative;
+	z-index: 1;
+	width: <?=$ssWidth;?>px;
+	height: 270px;
+	overflow: hidden;
+}
+
+.billboard-item {
+	background: url(../images/image-preload-white.gif) no-repeat center center;
+	width: 800px;
+	height: 270px;
+	position: absolute;
+	top: 0px;
+	overflow: hidden;
+}
+
+#billboard-shadow {
+	background: url(../images/billboard-shadow.jpg) no-repeat;
+	width: 500px;
+	height: 115px;
+	position: relative;
+	top: -64px;
+}
+/*
+#billboard .billboard-item img {
+	width: 770px;
+	height: 360px;
+}
+*/
+#billboard .billboard-item .billboard-shadow-left,#billboard .billboard-item .billboard-shadow-right {
+	position: absolute;
+	width: 34px;
+	height: 270px;
+	background: url(../images/billboard-shadow-left.png) repeat-y;
+}
+
+#billboard .billboard-item .billboard-shadow-right {
+	left: 736px;
+	top: 0px;
+	background: url(../images/billboard-shadow-right.png) repeat-y;
+}
+
+.billboard-description {
+	position: absolute;
+	top: 270px;
+	left: 0px;
+	width: 760px;
+	height: 20px;
+	background: black;
+	padding: 20px;
+	color: white;
+}
+
+.billboard-description a {
+	text-decoration: underline;
+	color: white;
+}
+
